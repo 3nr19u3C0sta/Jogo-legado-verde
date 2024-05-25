@@ -1,0 +1,11 @@
+
+public class Civil extends Jogador{
+	public Civil() {
+		this.passadodoJogador = 2;
+	}
+	@Override
+	public void passado() {
+		System.out.println("Voce escolheu o passado urbano");
+	}
+
+}
