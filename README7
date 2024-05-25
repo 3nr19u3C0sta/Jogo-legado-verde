@@ -1,0 +1,5 @@
+public abstract class Jogador {
+	protected int passadodoJogador;
+	public abstract void passado();
+
+}
