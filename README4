@@ -1,0 +1,20 @@
+
+public class TerceiraFase extends Interiorano{
+	static int escolhafinal1;
+	static int escolhafinal2;
+	public static void conversaFinal() {
+		System.out.println("Voce demonstrou a toda a população quem causou a poluição e o desmatemento\n"
+				+ "Todos que lhe ajudaram sugeriram que voce iniciasse uma carreira na politica, para poder a nivel nacional\n"
+				+ "1. Aceita a sugestão e ingressar na politica\n"
+				+ "2. Negar a proposta");
+	}
+	public static void conversaFinal1() {
+		System.out.println("Sua trajetoria se iniciara demonstrando aos demais vereadores, prefeitos e governadores\n"
+				+ " suas estratégias para acabar com tudo que está prejudicando a fauna e a flora do nosso país.");
+	}
+	public static void conversaFinal2() {
+		System.out.println("Voce retorna para sua cidade natal para iniciar novas aventuras e novamente combater a caça ilegal.");
+	}
+	
+	
+}
