@@ -1,0 +1,138 @@
+public class PrimeiraFase extends SegundaFase{
+
+	public static void setNome(String nome) {
+		PrimeiraFase.nome = nome;
+	}
+
+	public static void setIdade(int idade) {
+		PrimeiraFase.idade = idade;
+	}
+	//Fiz Setters para os atributos idade e nome, para que o jogador possa escolhar essas caracteristicas em seu personagem
+	static String nome;
+	static int idade;
+	static int escolha1 = 0;
+	static int escolha2 = 0;
+	static int escolha3 = 0;
+	static int escolha4 = 0;
+	static int escolha5 = 0;
+	static String fala1;
+	static String fala0;
+	 
+	//Crirei os metodos das falas que serão chamadas caso a historia siga o caminho delas
+	public static void introdução() {
+		 fala0 =  "Devido ao avanço de degradação do meio ambiente, o " + nome + " terá que enfrentar diversos desafios para salvar o meio ambiente.\n O " + nome + ","
+			+	" é um policial militar ambiental de "+idade+" anos, que reside na cidade Rondonópolis em Mato Grosso, e terá grandes desafios pela frente"
+			+	" Certa vez " + nome + ", no fim do dia cansado do trabalho, vendo uma notícia na TV, sobre uma certa caça ilegal que estava acontecendo "
+			+	" na região do Rio verde, resolveu por conta própria iniciar uma investigação.\n Em uma conversa com sua esposa, "
+			+	" contou seus planos sobre viajar para Rio Verde onde irá iniciar sua ideia, onde ela disse que não era uma boa ideia, "
+			+	" pois a polícia já está ciente dos casos, e por sua vez, fazia vista grossa dessa situação,"
+			+	" e por isso ele não deveria agir como “justiceiro” e agir por conta própria.\n"
+			+	" Chegando em Rio verde percebeu que além da existência de uma caça ilegal, iria encontrar um problema ainda maior,"
+			+	" o desmatamento excessivo que estava acontecendo na região.\n Para combater o problema da caça ilegal ele teve a ideia de criar, junto à população local,"
+			+	 "programas de conscientização e grupos de patrulha e fiscalização das áreas selvagens (onde ocorrem a caça ilegal)."
+			+	" Já para o problema do desmatamento excessivo, a idéia proposta por " + nome + ", será: encontrar o principal responsável pelo comando do desmatamento local,"
+			+	"+“para conversar com ele”, e aplicar punições severas caso haja descumprimento das propostas colocadas  \n "   
+			+	 "Após seu êxito no combate na cidade de Rio verde, " + nome + " ficou sabendo que estava chegando muitos peixes mortos na beira do rio Paraná em Bataguassu.\n"
+			+	" E então decidiu que irá enfrentar uma nova aventura na cidade de Bataguassu. \n Com o início da investigação ele descobriu que lá estava acontecendo uma coisa HORRIVEL,"
+			+	" uma grande indústria de têxtil chamada Tecidos Mortais, estava contaminado a região jogando resíduos contaminados no rio.\n "
+			+	" Para combater isso, ele marcou uma reunião com o presidente da indústria, sem o conhecimento das autoridades locais,"
+			+	" impondo que a indústria parasse imediatamente com a poluição e contaminação nos rios doces da cidade de Bataguassu.\n"
+			+	" Dentre as ideias propostas por " + nome + ", estava a filtragem dos líquidos utilizados para a preparação dos tecidos, e a utilização de reagente ecológicos. \n"
+			+	" Mas CEO da indústria Tecidos Mortais, não deu ouvidos à ele, e o expulsou a força, utilizando a segurança, de dentro da empresa. "
+			+	 "Com isso, gerou uma motivação pessoal para acabar com essa empresa.\n"
+            +	 "Tendo em vista que suas missões obtiverem sucesso, foi para Campo grande, onde foi promovido a um determinado cargo público,"
+            +	 "encontrou desafios e conseguiu implementar suas ideias de combate a degradação e poluição do meio ambiente," 
+            +	 "com esse cargo ele poderá fazer várias reuniões com líderes de grandes indústrias e comércios locais para a colaboração de todos," 
+            +	 "no combate a degradação do meio ambiente.\n"
+            +	 "Alguns líderes de empresas poderosas, o confrontaram e não aceitaram a ideia proposta por ele, por ser um novo integrante público,"
+            +	 "não passava muita credibilidade para eles.\n Então XXX tomou a frente da situação e decidiu combater por conta própria,"
+            +	 "colocando punições nas empresas e exigindo a prisão desses líderes.";
+
+	 }
+	 
+	 public static void falaIntrodução(){
+			fala1 = nome + " chega em uma aldeia indigena. Avistas um nativo e se dirige a ele\n"
+					+ nome+": Fiquei sabendo que está ocorrendo alguns casos de desmatamento e caça ilegal por essa regiao,"
+					+ " você poderia me dar mais informações?\n"
+					+ "O indio lhe informa sobre onde estão ocorrendo os desmatamentos e as caças\n"
+					+ "O indio se oferece para lhe ajudar se voce for tentar impendir o desmatamento\n"
+					+ "Digite o numero ao lado da opção para escolhe-la\n"
+					+ "1. Aceitar a ajuda\n"
+					+ "2. Negar a ajuda";
+			System.out.println(fala1);
+		}
+
+	public static void escolhaIndio() {
+			System.out.println("Voces dois vão local onde os caçadores estão alojados\n"
+					+ " e o indio faz o questionamento sobre qual armadilha eles irão fazer,\n"
+					+ " uma rede para captura do caçador ou um buraco falso para os cacadores ficarem presos.\n"
+					+ "1. Rede\n"
+					+ "2. Buraco falso");
+			return;
+				}
+	public static void escolhaIndioi1() {
+			System.out.println("Voces capturaram os caçadores\n"
+					+"Restou um caçador\n"
+					+ "O índio sabe onde é o esconderijo do último caçador e pergunta ao personagem: \n"
+					+ "Você quer render o último caçador e prendê-lo ou você quer deixar conosco(indigenas)?\n"
+					+ "1. Prender o ultimo caçador\n"
+					+ "2. Deixe com os nativos");
+			return;
+			}
+	public static void escolhaIndioi2() {
+			System.out.println("Voce percebe que para parar com o desmatamento o voce vai ter que se juntar com ONGs ambientais para tentar minimizar o desmatamento \n"
+					+ "ou deixar com as autoridades locais para resolver o problema,\n"
+					+ "pois, não consegue resolver sozinho.\n"
+					+ "Fim da primeira fase\n"
+					+ "------------------------------------------------------------------------------------");
+			return;
+	}
+	public static void escolhaSolo() {
+		System.out.println(nome +" decide seguir o caminho sozinho\n"
+				+ "Você encontra um animal morto a tiros, "
+				+ "e junto ao animal encontras pegadas, que suspeitou ser de caçadores\n"
+				+ "Voce quer seguir as pegadas?\n"
+				+ "1. Sim\n"
+				+ "2. Não");
+		if (passadodoJogador == 1) {
+			System.out.println("Voce não conhece a floresta, corre risco de se perde caso não tenha alguem lhe acompanhando ou esteja seguindo uma pista");
+		}
+		return;
+	}
+	public static void escolhaSolo1() {
+		System.out.println(nome +" encontra o alojamento dos caçadores\n"
+				+ "1. Entra no alojamento\n"
+				+ "2. Esperar os caçadores se separarem");
+		return;
+	}
+	public static void escolhaSolo2() {
+		System.out.println(nome +" se perdeu na floresta e foi atacado por um animal\n"
+				+ "Voce perdeu\n"
+				+ "Reinicie o jogo\n"
+				+ "------------------------------------------------");
+				
+		return;
+	}
+	public static void escolhaSolo11() {
+		System.out.println(nome +" se escondeu no alojamento ate o anoitecer e rendeu os caçadores enquanto dormiam\n"
+				+ "Fim da primeira fase\n"
+				+ "-------------------------------------------------------------------------------------------------------------------------------------------------");
+	}
+	public static void escolhaSolo12() {
+		System.out.println("Voce fez uma armadilha e capturou dois caçadores\n"
+				+ "O ultimo caçador sobrando esta a solta\n"
+				+ "1. Interrogar os caçadores capturados onde esta o chefe\n"
+				+ "2. Esperar o chefe ir procura-los");
+		return;
+	}
+	public static void escolhaSolo121() {
+		System.out.println("Voce capturou o ultimo caçador\n"
+				+ "Para parar com o desmatamento o jogador terá que decidir entre,\n "
+				+ "se juntar com ONGs ambientais para tentar minimizar o desmatamento ou deixar com as autoridades locais para resolver o problema,\n"
+				+ " pois, não consegue resolver sozinho.");
+		return;
+	}
+	}
+
+
+
