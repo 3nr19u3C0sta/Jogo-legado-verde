@@ -1,0 +1,15 @@
+
+public class Interiorano extends Civil{
+	//Criei as classes que sofrão polimorfismo, utilizando um metodo para que quando sejam chamadas chamadas, mudarão
+	// o atributo passadoJogador automaticamente, assim definindo sua classe
+	public Interiorano() {
+		this.passadodoJogador = 1;
+	}
+	@Override
+	public void passado() {
+		System.out.println("Voce escolheu o passado no interior");
+		
+	}
+		
+
+}
