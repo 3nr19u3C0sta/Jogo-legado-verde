@@ -1,0 +1,79 @@
+public class SegundaFase extends TerceiraFase{
+	static int segundaescolha1= 0;
+	static int segundaescolha2= 0;
+	static int segundaescolha3= 0;
+	static int segundaescolha4= 0;
+	static int segundaescolha5= 0;
+	static int passadodoJogador;
+	
+	
+	public static void conversaChefe() {
+		System.out.println("Voce encontra o chefe dos caçadores\n"
+				+ "1. Ir conversar com ele\n"	
+				+ "2. ir investigar");
+	}
+	public static void conversapacifica() {
+		System.out.println("O chefe diz não saber sobre o desmatamento e as caças");
+	}
+	public static void conversapacifica1() {
+		System.out.println("Voce começa a investigar\n"
+				+ "Conversando com um morador local que descobres sobre um pescador bem-informado sobre as situações \n"
+				+ "1. Ir conversar com o pescador\n"
+				+ "2. Continuar a investigar");
+	}
+	public static void investigacaopescador() {
+		System.out.println("Ao conversar com o pescador se oferece ajuda para participar das investigações.\n"
+				+ "O pescadoro informa que conhece o galpão da empresa do chefe onde são jogadas as coisas no rio.\n"
+				+ "1. Retornar ao chefe e interroga-lo\n"
+				+ "2. Buscar as autoridades locais");
+	}
+	public static void investigacaopescador1() {
+		System.out.println("O dono fica com receio e para de despejar os produtos químicos no Rio\n"
+				+ "Fim da segunda fase\n"
+				+ "-------------------------------------------------------------------------------------------------------------------------------------");
+	}
+	public static void investigacaopescador2() {
+		System.out.println("A empresa é fechada e o chefe é preso\n"
+				+ "Fim da segunda fase\n"
+				+ "-------------------------------------------------------------------------------------------------------------------------------------");
+	}
+	
+	public static void investigacaosolo() {
+		System.out.println("Voce procura locais para investigar\n"
+				+ "1. Investigar os rio\n"
+				+ "2. Tentar contato sigiloso com os funcionarios");
+	}
+	public static void investigacaosolo1() {
+		System.out.println("Procurando nos rios, encontras alguns galões e produtos despajados nos rios\n"
+				+ "Registras em fotos a descoberta\n"
+				+ "1. Incriminar a empresa\n"
+				+ "2. Continuar investigando");
+		if (passadodoJogador == 2) {
+			System.out.println("Voce sabe que judicialmente não é o suficiente para incriminar uma empresa");
+		}
+	}
+	public static void investigacaosolofimrapdio() {
+		System.out.println("Suas provas não foram o suficiente para incriminar a empresa, agora estão de olho em voce\n"
+				+ "Voce perdeu\n"
+				+ "Reinicie o jogo\n"
+				+ "-------------------------------------------------------------------------------------");
+	}
+	public static void investigacaosolo2() {
+		System.out.println("Voce encontrou um funcionario da empresa durante a investigacao\n"
+				+ "Ele informa sobre um galpao escondido, possuindo as evidencias que procura\n"
+				+ "1. Confiar nele e ir ate o galpao\n"
+				+ "2. Decidir entrar sorrateiramente da industria do chefe");
+	}
+	public static void investigacaosolofimbom() {
+		System.out.println("Voce foi ate o galpão da empresa e encontrou os produtos despejado no rio, adquiriendo as provas que precisava\n"
+				+ "Fim da segunda fase\n"
+				+ "-------------------------------------------------------------------------------------");
+	}
+	public static void investigacaosolofimruim() {
+		System.out.println("Voce tentou entra na industria, mas foi capturado e preso por invasao de propriedade\n"
+				+ "Voce perdeu\n"
+				+ "Reinicie o jogo\n"
+				+ "-------------------------------------------------------------------------------------");
+	}
+}
+
